@@ -1,0 +1,53 @@
+<!DOCTYPE html> 
+<html lang="ko"> 
+  <head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>랜덤 문구</title> 
+    <style> body { text-align: center; font-size: 2rem; margin-top: 20%; } 
+    </style> 
+  </head> 
+  <body> 
+    <p id="message">주제 설정 Random Dice가 말해주길...
+    </p> <button onclick="showRandomMessage()">눌러서 확인하기</button> 
+    <script> 
+      function showRandomMessage() 
+      { const messages = 
+        [ "평화", "공존", "우정", "자유", "현대","고전" ,"사랑","자연","결속"]; 
+       document.getElementById("message").innerText = messages[Math.floor(Math.random() * messages.length)]; } 
+    </script> 
+  </body> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
